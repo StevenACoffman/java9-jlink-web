@@ -27,11 +27,15 @@ but now we no longer have to use an unofficial JRE.
 GIT_REVISION=$(git rev-parse HEAD)
 REPOSITORY=stevenacoffman/java9-jlink-web
 docker build \
-        -t "${REPOSITORY}:${GIT_REVISION}" \
+        -t "${REPOSITORY}:GITSHA-${GIT_REVISION}" \
         -t "${REPOSITORY}:latest" \
         .
 docker run -it -p 9000:9000 stevenacoffman/java9-jlink-web
 ```
+
+=== What the what now?
+
+See [this person's awesome work describing the full details of the process](https://github.com/vmj/http-server)
 
 === Run the container image
 
@@ -40,3 +44,5 @@ Running the container is old news:
   docker run -p 9000:9000 stevenacoffman/java9-jlink-web
 
 And checking that it works is... yes, in the <<Test>> section.
+
+nd checking that it works is... yes, in the <<Test>> section.
