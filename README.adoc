@@ -29,14 +29,14 @@ REPOSITORY=stevenacoffman/java9-jlink-web
 docker build \
         -t "${REPOSITORY}:${GIT_REVISION}" \
         -t "${REPOSITORY}:latest" \
-        -t "${REPOSITORY}:${GIT_BRANCH}"
-docker run "${REPOSITORY}:${GIT_REVISION}" --rm -it -p9000:9000 stevenacoffman/java9-jlink-web
+        .
+docker run -it -p 9000:9000 stevenacoffman/java9-jlink-web
 ```
 
 === Run the container image
 
 Running the container is old news:
 
-  docker run --rm -it -p9000:9000 stevenacoffman/java9-jlink-web
+  docker run -p 9000:9000 stevenacoffman/java9-jlink-web
 
 And checking that it works is... yes, in the <<Test>> section.
