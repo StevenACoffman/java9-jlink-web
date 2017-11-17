@@ -35,11 +35,13 @@ docker run -it -p 9000:9000 stevenacoffman/java9-jlink-web
 
 === Acknowledgments
 
-Java web code and jlink flags comes from [vmj http-server](https://github.com/vmj/http-server).
-Combining jlink with CDS is from [Matthew Gilliard's blog](http://mjg123.github.io/2017/11/07/Java-modules-and-jlink.html)
++ Java web code and jlink flags comes from [vmj http-server](https://github.com/vmj/http-server) [I'm an inline-style link](https://www.google.com).
++ Combining jlink with CDS is from [Matthew Gilliard's blog](http://mjg123.github.io/2017/11/07/Java-modules-and-jlink.html)
 
 === Run the container image
 
 Running the container is old news:
 
+```
   docker run -p 9000:9000 stevenacoffman/java9-jlink-web
+```
